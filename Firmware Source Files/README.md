@@ -1,6 +1,6 @@
 # Béton3 Firmware
 
-This folder holds major versions of the firmware for Béton3.  Firmware is written for Arduino Pro Micro and clones (Arduino Leonardo platform in the Arduino IDE).  
+This folder holds major versions of the firmware for Béton3.  Firmware is written for Arduino Pro Micro and Pro Micro clones (Arduino Leonardo platform in the Arduino IDE).  
 
 I've made an attempt to document the majority of the code using comments throughout, but if you are using this as a base for a revision and have clarifying questions shoot me an email at alechowicz@umass.edu.
 
