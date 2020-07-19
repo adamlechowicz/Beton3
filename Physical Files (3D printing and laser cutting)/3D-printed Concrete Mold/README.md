@@ -6,10 +6,10 @@ The 3D files in this folder combine to create a concrete mold for Béton3's rota
 Files:
 
 - moldside.ipt - Original Autodesk Inventor file
-- moldside.stl - 180 degrees of the concrete mold's side.
+- **moldside.stl** - 180 degrees of the concrete mold's side.
 
 - moldbase.ipt - Original Autodesk Inventor file
-- moldside.stl - Concrete mold's base.
+- **moldside.stl** - Concrete mold's base.
 
 In order to create a functioning mold, you'll need to print 2 of the moldside file, and 1 of the moldbase file.
 
