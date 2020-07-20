@@ -8,7 +8,7 @@ This wiring diagram is intended as a quick reference guide to the wiring setup I
 
 - **Rotary Encoder**
   - GND to GND on Pro Micro
-  - + to RAW (6-12V) on Pro Micro
+  - **+** to RAW (6-12V) on Pro Micro
   - SW to A2 on Pro Micro
   - DT to A1 on Pro Micro
   - CLK to A0 on Pro Micro
