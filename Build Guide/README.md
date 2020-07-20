@@ -1,2 +1,6 @@
 # Béton3
-A programmable, QMK-compatible, 3 (or 4) key macro pad with an OLED screen and concrete knob rotary encoder
+# Build Guide
+
+The Build Guide for Béton3 is split up into topics, with PDF files for each topics:
+
+-
