@@ -1,3 +1,4 @@
+//XBM format "flipped" play icon (for rewind)
 static const unsigned char reverse_play[] U8X8_PROGMEM = {
  0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x18,0x00,0x00,0x00,
  0x3e,0x00,0x00,0x80,0x3f,0x00,0x00,0xe0,0x3f,0x00,0x00,0xf8,0x3f,0x00,0x00,
@@ -13,6 +14,7 @@ static const unsigned char reverse_play[] U8X8_PROGMEM = {
 void drawForward() {
   u8g2.firstPage();  do {
     switch (animation_state) {
+      //this switch statement decides which frame of the animation to draw based on the number in animation_state.
       case 0 ... 10:
         u8g2.setContrast(255);
         u8g2.drawXBMP(33, 0, icon_width, icon_height, play);
@@ -33,6 +35,7 @@ void drawForward() {
 void drawRewind() {
   u8g2.firstPage();  do {
     switch (animation_state) {
+      //this switch statement decides which frame of the animation to draw based on the number in animation_state.
       case 0 ... 10:
         u8g2.setContrast(255);
         u8g2.drawXBMP(33, 0, icon_width, icon_height, reverse_play);
