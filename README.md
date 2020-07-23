@@ -16,5 +16,6 @@ Finally, three Cherry MX-compatible switches provide a basis for programmable ma
 To build your own, consult the [Build Guide.](https://github.com/adamlechowicz/Beton3/tree/master/Build%20Guide)
 
 
-<a href="https://www.buymeacoffee.com/adamlechowicz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/adamlechowicz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
+<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
