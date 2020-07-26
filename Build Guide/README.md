@@ -7,5 +7,6 @@ The Build Guide for Béton3 is split up into topics, with PDF files for each top
 
 1. **Off-the-Shelf Parts**
 2. **Beton-Specific Parts**
+3. **Soldering Guide**
 
 **in progress**
