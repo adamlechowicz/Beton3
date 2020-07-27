@@ -9,4 +9,4 @@ The Build Guide for Béton3 is split up into topics, with PDF files for each top
 2. **Beton-Specific Parts**
 3. **Soldering Guide**
 
-**in progress**
+**Build guide is in progress, about 75% finished**
