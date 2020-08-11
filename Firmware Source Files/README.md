@@ -4,6 +4,13 @@ This folder holds major versions of the firmware for Béton3.  Firmware is writt
 
 I recorded a quick and dirty video of the stock firmware's interface at https://www.youtube.com/watch?v=9jtD4WeTKok
 
+The following open source libraries are dependencies for the firmware:
+- [AsyncDelay](https://www.arduinolibraries.info/libraries/async-delay)
+- [HID-Project](https://www.arduinolibraries.info/libraries/hid-project)
+- [TimerOne](https://www.arduinolibraries.info/libraries/timer-one)
+- [U8g2](https://www.arduinolibraries.info/libraries/u8g2)
+- [ClickEncoder](https://github.com/0xPIT/encoder)
+
 I've made an attempt to document the majority of the code using comments throughout, but if you are using this as a base for a revision and have clarifying questions shoot me an email at alechowicz@umass.edu.
 
 One thing that may help with code readability as well is the simple wiring diagram hosted in a different folder in this repository, at least in terms of understanding which pins connect to which components.
