@@ -10,4 +10,7 @@ The Build Guide for Béton3 is split up into topics, with PDF files for each top
 3. **Soldering Guide**
 4. **Final Assembly Guide**
 
-**Build guide is in progress, about 75% finished**
+- Appendix B. **Casting a Concrete Volume Knob**
+- Appendix C. **Flashing Beton3 Stock Firmware**
+
+**Build guide is in progress, about 85% finished**
