@@ -1,4 +1,4 @@
-char* version = "Firmware Version: 1.0";
+char* version = "Firmware Version: 1.1";
 
 void drawVersion() {
   u8g2.firstPage();  do {

@@ -29,9 +29,9 @@ private:
 
 //these #define statements dictate which pin connects to which button.
 //Eg: Button1 is pin 7, etc.
-#define BUTTON1    7
+#define BUTTON1    9
 #define BUTTON2    8
-#define BUTTON3    9
+#define BUTTON3    7
 
 //these integers are counters which monitor how long each button has been clicked
 //for, enabling long-press functions such as rewind.
@@ -39,6 +39,8 @@ int button1Clicked = 0;
 int button2Clicked = 0;
 int button3Clicked = 0;
 int encoderClicked = 0;
+
+int encoderValue = 0;
 
 //this statement initializes the encoder on pins A1, A0 and A2
 ClickEncoder encoder(A1, A0, A2);
@@ -80,21 +82,33 @@ void loop() {
   //checks to see if the rotary encoder has turned
   current += encoder.getValue();
   auto diff = current - value;
+  
   if (diff != 0) {
-    
-    //if turned clockwise, volume up and display animation 
-    if (diff > 0) {
-      Consumer.write(MEDIA_VOL_UP);
-      animation_state = 0;
-      animation = UP;
-      delay(80);      
-    } 
-    //if turned counter-clockwise, volume down and display animation
-    else {
-      Consumer.write(MEDIA_VOL_DOWN);
+
+    encoderValue += diff;
+    Serial.println(encoderValue);
+
+    //if turned counter-clockwise, display animation 
+    if (diff < 0){
       animation_state = 0;
       animation = DOWN;
-      delay(80);              
+    }
+    //if turned clockwise, display animation 
+    else if (diff > 0){
+      animation_state = 0;
+      animation = UP;
+    }
+    //if turned clockwise enough, volume up 
+    if (encoderValue > 3) {
+      Consumer.write(MEDIA_VOL_UP);
+      encoderValue = 0;
+      delay(60);      
+    } 
+    //if turned counter-clockwise enough, volume down
+    else if (encoderValue < -3) {
+      Consumer.write(MEDIA_VOL_DOWN);
+      encoderValue = 0;
+      delay(60);              
     }
     value.set(current);
   }
